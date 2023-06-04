@@ -20,7 +20,7 @@ Resources:
       Name: SM703 Hands-on-qa
 
 
-  HelloWorldFunctionProd:
+  HelloWorldFunctionQa:
     Type: AWS::Serverless::Function
     Properties:
       Handler: io.micronaut.function.aws.proxy.MicronautLambdaHandler
@@ -33,7 +33,7 @@ Resources:
             Path: /
             Method: get
 
-  HelloWorldFunctionLogGroupProd:
+  HelloWorldFunctionLogGroupQa:
     Type: AWS::Logs::LogGroup
     Properties:
       LogGroupName: !Sub "/aws/lambda/${HelloWorldFunctionQa}"
