@@ -16,8 +16,8 @@ Resources:
   MyApi:
     Type: AWS::Serverless::Api
     Properties:
-      StageName: qa-testing
-      Name: SM703 Hands-on-qa-testing
+      StageName: qa
+      Name: SM703 Hands-on-qa
 
 
   HelloWorldFunctionQa:
