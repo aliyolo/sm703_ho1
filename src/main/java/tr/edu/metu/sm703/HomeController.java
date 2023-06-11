@@ -6,7 +6,8 @@ import java.util.Map;
 
 @Controller
 public class HomeController {
-//Hot Fix Test Commit-10
+//Hot Fix Test Commit-4
+
     @Get
     public Map<String, Object> index() {
         return Collections.singletonMap("message", "Hello World from prod");
