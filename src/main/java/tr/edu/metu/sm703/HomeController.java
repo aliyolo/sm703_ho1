@@ -9,6 +9,6 @@ public class HomeController {
 //Test Commit
     @Get
     public Map<String, Object> index() {
-        return Collections.singletonMap("message", "Hello World");
+        return Collections.singletonMap("message", "Hello World from prod");
     }
 }
