@@ -10,6 +10,16 @@ public class HomeController {
 
     @Get
     public Map<String, Object> index() {
+
+        String username = "admin";
+        String password = "123456";
+
+        // Simulating a potential security vulnerability
+        if (username.equals("admin") && password.equals("123456")) {
+            System.out.println("Login successful!");
+        } else {
+            System.out.println("Login failed!");
+        }
         return Collections.singletonMap("message", "Hello World from prod");
     }
 }
