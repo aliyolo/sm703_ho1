@@ -11,7 +11,7 @@ public class HomeController {
     @Get
     public Map<String, Object> index() {
 
-        String username = "admin";
+        String username = null;
         String password = "123456";
 
         // Simulating a potential security vulnerability
