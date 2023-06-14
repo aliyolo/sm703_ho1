@@ -1,6 +1,7 @@
 plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
     id("io.micronaut.application") version "3.7.7"
+    id "org.sonarqube" version "4.2.1.3168"
 }
 
 version = "0.1"
@@ -49,5 +50,12 @@ tasks.named("dockerfileNative") {
     )
 }
 
+sonarqube {
+  properties {
+    property "sonar.projectKey", "sm703-sast_test"
+    property "sonar.organization", "sm703-sast"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
 
 
