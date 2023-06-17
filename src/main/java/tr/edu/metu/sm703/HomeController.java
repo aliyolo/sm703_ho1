@@ -6,9 +6,9 @@ import java.util.Map;
 
 @Controller
 public class HomeController {
-
+//test-1
     @Get
     public Map<String, Object> index() {
-        return Collections.singletonMap("message", "Hello World from qa");
+        return Collections.singletonMap("message", "Hello World from qa1");
     }
 }
