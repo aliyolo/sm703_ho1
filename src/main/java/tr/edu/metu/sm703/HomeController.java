@@ -7,6 +7,7 @@ import java.util.Map;
 @Controller
 public class HomeController {
 //Hot Fix Test Commit-4
+    //test
 
     @Get
     public Map<String, Object> index() {
